@@ -1,0 +1,168 @@
+body {
+  background-color:whitesmoke;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+.hoverbtn{
+    position:fixed; 
+    left:90vw;
+    z-index: 1000;
+    min-width: 9vw; 
+}
+
+#search{
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url('/img/search-solid.svg');
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+#forgot{
+  width: 80%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+#search:focus, #forgot:focus {
+  width: 100%;
+}
+/*
+::-webkit-scrollbar {
+    display:none ;
+}*/
+.btn{
+  margin-left: 3px;
+  margin-right: 3px;
+  color:black;
+  background: white;
+  transition: 1s;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+ /* top:50px;
+*/  overflow: auto;
+  font-size:13px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #0275d8;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.closeSideBarButton{
+  width:100px;
+        height:auto;
+        padding:0;
+        display:none;
+}
+
+#menu_icon{
+  display:none;
+}
+
+
+div.content {
+  margin-left: 160px;
+  margin-right:10;
+  margin-top:55px;
+  padding: 10px;
+  position:relative;
+}
+
+.profile{
+  width: 4%;
+}
+.card-event{
+  height: 500px;
+}
+.card-header{
+  background:white;
+}
+
+.card-footer{
+  background:white;
+}
+
+.card-question{
+  background: #eff0f1;
+  max-height: 300px;
+  overflow: scroll;
+}
+.text{
+  width: 96%;
+}
+
+.question{
+  margin-right: 2%;
+}
+
+.answer{
+  margin-left: 5%;
+  margin-right: 2%;
+}
+
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index:1;
+  }
+
+  div.content{
+padding-top:50px;
+}
+  .sidebar a {float: left;text-align:center;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align:left;
+    float: none;
+  }
+  .sidebar {
+    width: 0px;
+    height: auto;
+    position: fixed;
+    top:100px;
+    z-index:101;
+  }
+}
+

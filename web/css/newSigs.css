@@ -1,0 +1,58 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 Oct, 2019, 1:47:37 AM
+    Author     : elkorf
+*/ 
+.btn-post{
+  position: fixed;
+  bottom: -4px;
+  right: 10px;
+}
+h1{
+    font-size: 50px;
+}
+.card {
+    margin-top:20px;
+    padding-top: 0px;
+    box-shadow: 2px 0px 10px rgba(0,0,0, .2);
+    transition: transform .2s;
+    min-height:300px;
+    max-height: auto;
+    background:white;
+  }
+  .card:hover { 
+    box-shadow: 15px 0px 80px rgba(0,0,0, .2);
+    transform: scale(1.005);
+    -ms-transform: scale(1.005); /* IE 9 */
+    -webkit-transform: scale(1.005); /* Safari 3-8 */
+    transform: scale(1.005); 
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid black;
+    background: white;  
+    color: black;
+  }
+  .panel-heading {
+    color: black !important;    
+  }
+  .panel-footer {
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    float:right;
+    min-width: 50%;
+    margin: 15px 2px;
+    width: 30%;
+    background-color: black;
+    color: #fff;
+  }

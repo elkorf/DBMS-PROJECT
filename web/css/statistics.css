@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 Oct, 2019, 12:40:28 PM
+    Author     : elkorf
+*/
+#grpname:focus{
+    background: white;  
+}
+p{
+    min-height: 200px;
+}
+p:focus{
+    background: white;
+}
+.jumbotron{
+    background: #d7ebf5;
+    padding-top: 10px;
+    max-height: auto;
+    min-height: 500px;
+}
+.card{
+   border: 1px solid black; 
+    transition: transform .05s;
+}
+.card:hover{
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    transform: scale(1.01);
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01); 
+}
+.card-footer{
+    float:bottom;
+    background: white;
+}
+td{
+   width:100%;
+   padding-right: 20px;
+   padding-left: 20px;
+}
+tr{
+    height: 40px;
+    overflow:auto;
+}
+.features-card{
+    border: 1px solid black; 
+    transition: transform .2s;
+    min-height: 2vh;
+}
+.features-card:hover{
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    transform: scale(1.01);
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01); 
+}
+.stat-card{
+    border: 1px solid black; 
+    transition: transform .2s;
+    max-height: 70vh;
+    max-width: 50vw;
+}
+.stat-card:hover{
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+    transform: scale(1.01);
+    -ms-transform: scale(1.01); /* IE 9 */
+    -webkit-transform: scale(1.01); /* Safari 3-8 */
+    transform: scale(1.01);    
+}
