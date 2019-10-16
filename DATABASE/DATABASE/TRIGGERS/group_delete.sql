@@ -1,0 +1,8 @@
+DELIMITER //
+CREATE TRIGGER group_delete
+AFTER DELETE ON group_details
+FOR EACH ROW
+	DELETE FROM event WHERE group_id=OLD.group_id;
+BEGIN
+END
+DELIMITER ;

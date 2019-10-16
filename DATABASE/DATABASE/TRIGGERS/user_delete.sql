@@ -1,0 +1,9 @@
+DELIMITER //
+CREATE TRIGGER user_delete
+AFTER DELETE ON users
+FOR EACH ROW
+BEGIN
+
+   DELETE FROM group_members WHERE use_id=OLD.user_id;
+END
+DELIMITER ;
