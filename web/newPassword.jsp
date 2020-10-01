@@ -83,7 +83,7 @@
             }
         }catch(Exception ex){
             //response.sendRedirect("forgotPassword.jsp");
-            System.out.println("Error whiile forgot password "+ex);
+            System.out.println("Error while forgot password "+ex);
             ex.printStackTrace();
         }
     }else{
